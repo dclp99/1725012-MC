@@ -1,25 +1,25 @@
-c=0 #variable contador
-def minimo(vec): #definicion de la funcion minimo
-    x=vec[0]
+c=0
+def minimo(arreglo):
+    x=arreglo[0]
     global c
-    for y in vec:
+    for y in arreglo:
         c+=1
-        if(x<y):
-            y=x
+        if(y<x):
+            x=y
     return x
 
-def orden(vec): #definicion de la funcion ordenar
-    aux=vec[:]
-    vecsort=[]
-    for x in range(len(vec)):
+def ordenar(arreglo):
+    aux=arreglo[:]
+    arreglosort=[]
+    for x in range(len(aux)):
         y=minimo(aux)
         aux.remove(y)
-        vecsort.append(y)
-    return vecsort
+        arreglosort.append(y)
+    return arreglosort
 
 import random
-w=random.sample(range(0,200),50)
-print(w)
-wsort=orden(w)
+p=random.sample(range(0,150),50)
+print(p)
+psort=ordenar(p)
 print(c)
-print(wsort)
+print(psort)
