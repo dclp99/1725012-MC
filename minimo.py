@@ -1,4 +1,4 @@
-c=0
+c=0 #variable contador
 def minimo(vec): #definicion de la funcion minimo
     x=vec[0]
     global c
@@ -18,8 +18,8 @@ def orden(vec): #definicion de la funcion ordenar
     return vecsort
 
 import random
-p=random.sample(range(0,100),40)
-print(p)
-psort=orden(p)
+w=random.sample(range(0,200),50)
+print(w)
+wsort=orden(w)
 print(c)
-print(psort)
+print(wsort)
