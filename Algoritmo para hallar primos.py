@@ -10,4 +10,10 @@ def primo(n):
 
     return ("Es primo")
     
-
+#Ciclo para saber si el numero dado es primo o no, con un rango de 2 al 35
+for i in range(2,36):
+    cnt=0
+    primo(i)
+    print(i,cnt)
+    
+   
